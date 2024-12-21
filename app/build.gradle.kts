@@ -23,7 +23,7 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-        buildConfigField("String", "BASE_URL", "\"https://ailo-mini-project-f28f66c082cc.herokuapp.com/\"")
+        buildConfigField("String", "BASE_URL", "\"https://pcd-api-59737f2d93ef.herokuapp.com/\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

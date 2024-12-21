@@ -18,6 +18,7 @@ import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -127,7 +128,11 @@ class MainActivity : AppCompatActivity() {
             .addPart(filePart)
         api.submitImage(body.build())
             .subscribe({
-                binding.tvResult.text = "Predicted class: "+it.data
+                GlobalScope.launch {
+                withContext(Dispatchers.Main){
+                    binding.tvResult.text = "Predicted class: ${it.data} with confidence ${it.confidence}"
+                }
+                }
             },{
 
             }).let(disposable::add)

@@ -10,5 +10,5 @@ import retrofit2.http.Query
 @JvmSuppressWildcards
 interface MainService {
     @POST("classify-card")
-    fun submitImage(@Body body: MultipartBody): Single<BaseResponse<String>>
+    fun submitImage(@Body body: MultipartBody): Single<BaseResponse<String?>>
 }

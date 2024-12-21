@@ -4,9 +4,9 @@ import com.google.gson.annotations.SerializedName
 
 data class BaseResponse<MODEL>(
 
-    @SerializedName("message")
-    val message:String?,
+    @SerializedName("confidence")
+    val confidence:String?,
 
-    @SerializedName("data")
+    @SerializedName("prediction")
     val data:MODEL?
 )
