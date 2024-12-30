@@ -1,4 +1,4 @@
-package amirlabs.miniprojectailo
+package amirlabs.plate_detection
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

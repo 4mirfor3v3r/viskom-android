@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MiniProjectAILO"
+rootProject.name = "PlateDetection"
 include(":app")
  

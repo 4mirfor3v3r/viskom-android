@@ -14,16 +14,16 @@ android {
         }
     }
 
-    namespace = "amirlabs.miniprojectailo"
+    namespace = "amirlabs.plate_detection"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "amirlabs.miniprojectailo"
+        applicationId = "amirlabs.plate_detection"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-        buildConfigField("String", "BASE_URL", "\"https://pcd-api-59737f2d93ef.herokuapp.com/\"")
+        buildConfigField("String", "BASE_URL", "\"https://viskom-plate-detection-c5d94c55511e.herokuapp.com/\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -64,6 +64,7 @@ dependencies {
 
     implementation("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("id.zelory:compressor:3.0.1")
 
     //    Networking
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")

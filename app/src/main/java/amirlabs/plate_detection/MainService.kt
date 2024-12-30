@@ -1,4 +1,4 @@
-package amirlabs.miniprojectailo
+package amirlabs.plate_detection
 
 import io.reactivex.rxjava3.core.Single
 import okhttp3.MultipartBody
@@ -9,6 +9,6 @@ import retrofit2.http.Query
 
 @JvmSuppressWildcards
 interface MainService {
-    @POST("classify-card")
-    fun submitImage(@Body body: MultipartBody): Single<BaseResponse<String?>>
+    @POST("detect-image")
+    fun submitImage(@Body body: MultipartBody): Single<BaseResponse<List<PredictionModel>>>
 }

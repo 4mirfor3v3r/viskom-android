@@ -1,10 +1,10 @@
-package amirlabs.miniprojectailo
+package amirlabs.plate_detection
 
 import com.google.gson.GsonBuilder
 import okhttp3.Authenticator
 import okhttp3.Dispatcher
 import okhttp3.Interceptor
-import amirlabs.miniprojectailo.BuildConfig
+import amirlabs.plate_detection.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
